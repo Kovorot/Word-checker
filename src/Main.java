@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        WordChecker checker = new WordChecker("Основной функцией системы страхования является защита имущественных " +
-                "интересов страхователей.");
+        WordChecker checker = new WordChecker("Основной функцией системы страхования является защита имущественных "
+                + "интересов страхователей.");
 
         checker.hashWord("Анализ");    //false
         checker.hashWord("Защита");    //true

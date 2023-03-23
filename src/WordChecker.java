@@ -3,11 +3,11 @@ import java.util.List;
 import java.util.Set;
 
 public class WordChecker {
-    private static Set<String> words = new HashSet<>();
+    private static final Set<String> words = new HashSet<>();
 
     protected String text;
 
-    public WordChecker (String text) {
+    public WordChecker(String text) {
         this.text = text;
     }
 
@@ -24,11 +24,11 @@ public class WordChecker {
         }
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public String getText() {
         return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
